@@ -70,22 +70,17 @@ const Sidebar: React.FC = () => {
       </div>
       <div>
         <h3 className="font-bold text-lg mb-2">Organizations</h3>
+
+        
+        const organizations = ["Organization One", "Charity Two", "New Organization"];
         <ul>
-          <li>
-            <Link to="#" className="text-blue-600 hover:underline">
-              Organization One
-            </Link>
-          </li>
-          <li>
-            <Link to="#" className="text-blue-600 hover:underline">
-              Charity Two
-            </Link>
-          </li>
-          <li>
-            <Link to="#" className="text-blue-600 hover:underline">
-              New Organization
-            </Link>
-          </li>
+          {organizations.map((name, index) => (
+            <li key={index}>
+              <Link to="#" className="text-blue-600 hover:underline">
+                {name}
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
     </div>
