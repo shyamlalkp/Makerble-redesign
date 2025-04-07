@@ -34,7 +34,7 @@ const HomePage: React.FC = () => {
           />
           {error && <p className="text-red-500">{error}</p>}
           <button
-            className="mt-2 bg-cyan-600 text-white px-4 py-2 rounded hover:text-black hover:bg-white"
+            className="mt-2 bg-cyan-500 text-white px-4 py-2 rounded hover:text-black hover:bg-white"
             onClick={handleSubmit}
           >
             Add Story
